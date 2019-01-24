@@ -1,0 +1,19 @@
+{
+  "name": "docker-secret-env",
+  "version": "1.0.0",
+  "description": "Load docker secret or env, depends of NODE_ENV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourSoftRun/node-docker-secret-env.git"
+  },
+  "author": "Hugo Meyronneinc <hugo@yoursoft.run>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YourSoftRun/node-docker-secret-env/issues"
+  },
+  "homepage": "https://github.com/YourSoftRun/node-docker-secret-env#readme"
+}
