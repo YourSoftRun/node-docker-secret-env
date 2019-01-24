@@ -1,9 +1,9 @@
-const { readdirSync, readFileSync } = require('fs')
+const { readdirSync, readFileSync, existsSync } = require('fs')
 const { join } = require('path')
 
 const SECRETS_DIR = '/run/secrets'
 
-if (!global.secrets && fs.existsSync(SECRETS_DIR)) {
+if (!global.secrets && existsSync(SECRETS_DIR)) {
   global.secrets = {}
   readdirSync(SECRETS_DIR).forEach(file => {
     global.secrets[file] = readFileSync(join(SECRETS_DIR, file), 'utf8').toString().trim()
